@@ -1,0 +1,89 @@
+/*----------GLOBAL CSS----------*/
+
+
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+	display: none
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+label,
+input[type=button],
+input[type=submit],
+button {
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+/*----------PSUDO CLASSES----------*/
+
+
+
+:root {
+	--primary-color: ;
+	--primary-color-hover: ;
+	--secondary-color: ;
+	--secondary-color-hover: ;
+
+	--background-color: ;
+	--border-color: ;
+	--border-color-active: ;
+
+	--white-color: #fff;
+	--black-color: #000;
+}
+
+
+
+/*----------UTILITY CLASSES----------*/
+
+
+
+.container {
+	max-width: 1200px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: 0 auto;
+}
+
+
+
+/*----------ID'S CLASSES----------*/
+
+
+
+
+
+
+
+/*@media(max-width: 1000px){
+  
+}*/
