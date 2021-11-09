@@ -8,9 +8,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route exact path="/error">
-                    <Error></Error>
-                </Route>
+                <Route exact path="/error" element={<Error></Error>}></Route>
                 <Route component={Error}/>
             </Routes>
         </Router>
