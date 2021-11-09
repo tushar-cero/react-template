@@ -1,19 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import React, { useRef, useState, useEffect } from 'react';
-// import { AnimatePresence } from "framer-motion"; // cover switch with the tag
+// import { AnimatePresence } from "framer-motion"; // cover Routes with the tag
 
 function App() {
     return (
         <Router>
-            <Switch>
+            <Routes>
                 <Route exact path="/error">
                     <Error></Error>
                 </Route>
                 <Route component={Error}/>
-            </Switch>    
-            <Footer></Footer>
+            </Routes>
         </Router>
     );
 }
