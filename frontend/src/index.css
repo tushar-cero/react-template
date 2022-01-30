@@ -74,6 +74,35 @@ a {
 	margin: 0 auto;
 }
 
+.fa-linkedin:hover{
+    color: #0e76a8;
+    transition: 0.4s ease-out;
+}
+.fa-instagram:hover{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: 0.4s ease-out;
+}
+.fa-youtube-play:hover {
+	color: #FF0000;
+	transition: 0.4s ease-out;
+}
+.fa-facebook:hover {
+	color: #3b5998;
+	transition: 0.4s ease-out;
+}
+.fa-envelope-o:hover {
+	color: rgb(219 68 55);
+	transition: 0.4s ease-out;
+}
+.fa-twitter:hover {
+	color: #1DA1F2;
+	transition: 0.4s ease-out;
+}
+
 
 
 /*----------ID'S CLASSES----------*/
