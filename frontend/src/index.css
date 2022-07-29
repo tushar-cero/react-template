@@ -2,43 +2,39 @@
 
 
 
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+}
+html { 
+    -webkit-font-smoothing: antialiased; 
+    overflow-y: scroll;
 }
 
-html {
-	-webkit-font-smoothing: antialiased;
-	overflow-y: scroll;
+body::-webkit-scrollbar { 
+    display: none 
 }
 
-body::-webkit-scrollbar {
-	display: none
+ul { 
+    list-style: none; 
 }
 
-ul {
-	list-style: none;
+img { 
+    width: 100%; 
 }
 
-img {
-	width: 100%;
-}
-
-label,
-input[type=button],
-input[type=submit],
-button {
-	cursor: pointer;
+label, input[type=button], input[type=submit], button { 
+    cursor: pointer; 
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 
@@ -48,17 +44,17 @@ a {
 
 
 :root {
-	--primary-color: ;
-	--primary-color-hover: ;
-	--secondary-color: ;
-	--secondary-color-hover: ;
-
-	--background-color: ;
-	--border-color: ;
-	--border-color-active: ;
-
-	--white-color: #fff;
-	--black-color: #000;
+    --primary-color: ;
+    --primary-color-hover: ;
+    --secondary-color: ;
+    --secondary-color-hover: ;
+    
+    --background-color: ;
+    --border-color: ;
+    --border-color-active: ;
+    
+    --white-color: #fff;
+    --black-color: #000;
 }
 
 
@@ -73,6 +69,166 @@ a {
 	padding-right: 1rem;
 	margin: 0 auto;
 }
+.background_image_contain {
+	background-image: inherit;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: inherit;
+	width: inherit;
+}
+
+.background_image {
+	background-image: inherit;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: inherit;
+	width: inherit;
+}
+.background_image_top {
+	background-image: inherit;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: inherit;
+	width: inherit;
+}
+.background_image_bottom {
+	background-image: inherit;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: inherit;
+	width: inherit;
+}
+
+
+
+/*---------- BUTTON STYLING CLASSES CLASSES ----------*/
+
+
+
+.btn_container {
+	margin: 36px auto 0 auto;
+}
+
+.btn {
+    padding: 16px 24px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+	line-height: 1;
+	vertical-align: baseline;
+}
+.btn_primary {
+    color: var(--light-text-color-primary);
+    background: linear-gradient(135deg, rgba(117,16,247,1) 0%, rgba(247,16,71,1) 100%);
+    /* background: linear-gradient(135deg, #ddff00 0%, #00ffbb 100%); */
+}
+.btn_primary:hover {
+    display: block;
+    transform: scale(1.1);
+    box-shadow: rgba(117,16,247,0.5) 0px 5px 15px;
+    transition: all 0.35s ease;
+}
+
+
+
+/*----------FLEX CLASSES----------*/
+
+
+
+.flex_regular {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	justify-content: center;
+}
+
+.flex_space_between {
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	justify-content: space-between;
+}
+
+.flex_space_around {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	justify-content: space-around;
+}
+
+.flex_wrap_evenly {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	justify-content: space-evenly;
+}
+
+.flex_wrap_around {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	justify-content: space-around;
+}
+
+.flex_space_evenly {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	justify-content: space-evenly;
+}
+
+.flex_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/*----------MEDIA QUERY CLASSES----------*/
+
+
+
+.show_at_720 {
+	display: block;
+}
+.hide_at_720 {
+	display: none;
+}
+@media (min-width: 720px) {
+	.show_at_720 {
+		display: none;
+	}
+	.hide_at_720 {
+		display: block;
+	}
+}
+
+
+
+/*----------SOCIAL MEDIA----------*/
+
+
 
 .fa-linkedin:hover{
     color: #0e76a8;
@@ -102,17 +258,3 @@ a {
 	color: #1DA1F2;
 	transition: 0.4s ease-out;
 }
-
-
-
-/*----------ID'S CLASSES----------*/
-
-
-
-
-
-
-
-/*@media(max-width: 1000px){
-  
-}*/
