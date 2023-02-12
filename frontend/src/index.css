@@ -69,6 +69,13 @@ a {
 	padding-right: 1rem;
 	margin: 0 auto;
 }
+
+
+
+/*----------BACKGROUND IMAGE----------*/
+
+
+
 .background_image_contain {
 	background-image: inherit;
 	background-position: center;
@@ -102,7 +109,6 @@ a {
 	height: inherit;
 	width: inherit;
 }
-
 
 
 /*---------- BUTTON STYLING CLASSES CLASSES ----------*/
@@ -165,6 +171,26 @@ a {
 	justify-content: space-around;
 }
 
+.flex_space_evenly {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	justify-content: space-evenly;
+}
+
+
+
+.flex_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
 .flex_wrap_evenly {
 	display: flex;
 	flex-wrap: wrap;
@@ -185,22 +211,14 @@ a {
 	justify-content: space-around;
 }
 
-.flex_space_evenly {
-	display: flex;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-
-	justify-content: space-evenly;
-}
-
-.flex_wrap {
+.flex_wrap_between {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	align-items: center;
 	height: 100%;
 	width: 100%;
+
+	justify-content: space-between;
 }
 
 
